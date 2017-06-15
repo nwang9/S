@@ -86,6 +86,9 @@ fastlane/Preview.html
 fastlane/screenshots
 fastlane/test_output
 
+**/AppDelegate.swift
+
+
 ### Swift.Carthage Stack ###
 # Carthage
 #
