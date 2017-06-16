@@ -12,18 +12,26 @@ class HomepageViewController: UIViewController {
     
     // Sends user to contact us page
     @IBAction func contactUsPage(_ sender: Any) {
+        let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "contactUs") as UIViewController
+        self.present(viewController, animated: false, completion: nil)
     }
     
     // Sends user to account management page
     @IBAction func accountManagementPage(_ sender: Any) {
+        let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "accountManagement") as UIViewController
+        self.present(viewController, animated: false, completion: nil)
     }
     
     // Sends user to inventory setup page
     @IBAction func inventorySetupPage(_ sender: Any) {
+        let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "inventorySetup") as UIViewController
+        self.present(viewController, animated: false, completion: nil)
     }
     
     // Sends user to inventory tracking page
     @IBAction func inventoryTrackingPage(_ sender: Any) {
+        let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "inventoryTracking") as UIViewController
+        self.present(viewController, animated: false, completion: nil)
     }
     
     
