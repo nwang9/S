@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AccountManagementViewController: UIViewController {
+class AccountManagementViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

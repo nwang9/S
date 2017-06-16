@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import Parse
 
-class HomepageViewController: UIViewController {
+class HomepageViewController: BaseViewController {
     
     // Sends user to contact us page
     @IBAction func contactUsPage(_ sender: Any) {
@@ -37,10 +38,8 @@ class HomepageViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

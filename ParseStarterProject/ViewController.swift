@@ -120,6 +120,12 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Go straight to homepage if User is logged in
+        let currentUser = PFUser.current()
+        if currentUser != nil {
+            let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Homepage") as UIViewController
+            self.present(viewController, animated: false, completion: nil)
+        }
 
     }
     override func didReceiveMemoryWarning() {
