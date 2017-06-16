@@ -67,7 +67,7 @@ class ViewController: UIViewController {
                     
                     if error != nil {
                         var displayErrorMessage = "Please try again later"
-                        if let errorMessage = error as? NSError {
+                        if let errorMessage = error as NSError? {
                             displayErrorMessage = String(errorMessage.localizedDescription)
                         }
                         self.createAlert(title: "Form Error", message: displayErrorMessage)
@@ -94,11 +94,6 @@ class ViewController: UIViewController {
                         // Go to Homepage if credentials are valid
                         let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Homepage") as UIViewController
                         self.present(viewController, animated: false, completion: nil)
-                        
-                        /*let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-                        
-                        let nextViewController = storyBoard.instantiateViewControllerWithIdentifier("nextView") as NextViewController
-                        self.presentViewController(nextViewController, animated:true, completion:nil)*/
                     }
                 })
             }
@@ -125,6 +120,12 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Go straight to homepage if User is logged in
+        let currentUser = PFUser.current()
+        if currentUser != nil {
+            let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Homepage") as UIViewController
+            self.present(viewController, animated: false, completion: nil)
+        }
 
     }
     override func didReceiveMemoryWarning() {
