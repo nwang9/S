@@ -29,9 +29,15 @@ class HomepageViewController: BaseViewController {
         self.present(viewController, animated: false, completion: nil)
     }
     
-    // Sends user to inventory tracking page
+    // Sends user to inventory trace page
     @IBAction func inventoryTrackingPage(_ sender: Any) {
-        let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "inventoryTracking") as UIViewController
+        let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "inventoryTrace") as UIViewController
+        self.present(viewController, animated: false, completion: nil)
+    }
+    
+    //Sends user to inventory scan page
+    @IBAction func inventoryTrackingPage(_ sender: Any) {
+        let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "inventoryScan") as UIViewController
         self.present(viewController, animated: false, completion: nil)
     }
     
