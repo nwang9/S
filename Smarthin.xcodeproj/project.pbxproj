@@ -17,8 +17,8 @@
 		035597DD1EF3523500E74B07 /* InventorySetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035597DC1EF3523500E74B07 /* InventorySetupViewController.swift */; };
 		035597E11EF3525100E74B07 /* AccountManagementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035597E01EF3525100E74B07 /* AccountManagementViewController.swift */; };
 		035597E51EF9A3E700E74B07 /* Second.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 035597E41EF9A3E700E74B07 /* Second.storyboard */; };
-		035597ED1EF9C95000E74B07 /* scan 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 035597EC1EF9C95000E74B07 /* scan 2.jpg */; };
 		035597F11EF9D1B600E74B07 /* ContactUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035597F01EF9D1B600E74B07 /* ContactUsViewController.swift */; };
+		035597F51EFC356E00E74B07 /* InventoryTrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035597F41EFC356E00E74B07 /* InventoryTrackingViewController.swift */; };
 		814C3ACA1B69877600E307BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 814C3AC61B69877600E307BB /* Main.storyboard */; };
 		814C3ACB1B69877600E307BB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 814C3AC81B69877600E307BB /* Images.xcassets */; };
 		81BA814B1A49DA1800E65899 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BA814A1A49DA1800E65899 /* AppDelegate.swift */; };
@@ -42,8 +42,8 @@
 		035597DC1EF3523500E74B07 /* InventorySetupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InventorySetupViewController.swift; sourceTree = "<group>"; };
 		035597E01EF3525100E74B07 /* AccountManagementViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountManagementViewController.swift; sourceTree = "<group>"; };
 		035597E41EF9A3E700E74B07 /* Second.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Second.storyboard; sourceTree = "<group>"; };
-		035597EC1EF9C95000E74B07 /* scan 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "scan 2.jpg"; sourceTree = "<group>"; };
 		035597F01EF9D1B600E74B07 /* ContactUsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContactUsViewController.swift; path = ../ContactUsViewController.swift; sourceTree = "<group>"; };
+		035597F41EFC356E00E74B07 /* InventoryTrackingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InventoryTrackingViewController.swift; path = ../InventoryTrackingViewController.swift; sourceTree = "<group>"; };
 		814C3AC71B69877600E307BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		814C3AC81B69877600E307BB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		814C3AC91B69877600E307BB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -110,11 +110,11 @@
 				81BA814A1A49DA1800E65899 /* AppDelegate.swift */,
 				035597DA1EF3510900E74B07 /* BaseViewController.swift */,
 				035597D61EF32D6100E74B07 /* accountManagement.png */,
+				035597F41EFC356E00E74B07 /* InventoryTrackingViewController.swift */,
 				035597D81EF32E3A00E74B07 /* contactUs.png */,
 				035597D41EF32CF300E74B07 /* inventorySetup.png */,
 				035597D21EF32CAB00E74B07 /* inventoryTracking.jpg */,
 				035597D01EF1FA4C00E74B07 /* Home.png */,
-				035597EC1EF9C95000E74B07 /* scan 2.jpg */,
 				814C3AC61B69877600E307BB /* Main.storyboard */,
 				035597E41EF9A3E700E74B07 /* Second.storyboard */,
 				035597F01EF9D1B600E74B07 /* ContactUsViewController.swift */,
@@ -213,7 +213,6 @@
 				035597D11EF1FA4C00E74B07 /* Home.png in Resources */,
 				035597D31EF32CAB00E74B07 /* inventoryTracking.jpg in Resources */,
 				035597D91EF32E3A00E74B07 /* contactUs.png in Resources */,
-				035597ED1EF9C95000E74B07 /* scan 2.jpg in Resources */,
 				035597E51EF9A3E700E74B07 /* Second.storyboard in Resources */,
 				814C3ACA1B69877600E307BB /* Main.storyboard in Resources */,
 				814C3ACB1B69877600E307BB /* Images.xcassets in Resources */,
@@ -228,6 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				035597F51EFC356E00E74B07 /* InventoryTrackingViewController.swift in Sources */,
 				035597E11EF3525100E74B07 /* AccountManagementViewController.swift in Sources */,
 				81BA814D1A49DA1800E65899 /* ViewController.swift in Sources */,
 				035597DB1EF3510900E74B07 /* BaseViewController.swift in Sources */,
