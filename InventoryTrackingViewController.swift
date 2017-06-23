@@ -31,18 +31,25 @@ class InventoryTrackingViewController: BaseViewController, UITableViewDelegate, 
 
     // Send to scan page
     @IBAction func scanInventory(sender: UIButton) {
-      //  let buttonPosition = (sender as AnyObject).convert(CGPoint.zero, to: self.tableView)
-        //let indexPath = self.tableView.indexPathForRow(at: buttonPosition)
-        
+        var buttonPosition = sender.convert(CGPoint.zero, to: self.tableView)
+        let indexPath = self.tableView.indexPathForRow(at: buttonPosition)
+        //-----TO DO------- Change indexPath!=nil to if let
+        if indexPath != nil {
+            
         let invScanViewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "inventoryScan") as! ScanInventoryViewController
-        
-        
+            
             self.present(invScanViewController, animated: false, completion: nil)
+        }
     }
     // Send to trace page
     @IBAction func traceInventory(_ sender: Any) {
+        let buttonPosition = (sender as AnyObject).convert(CGPoint.zero, to: self.tableView)
+        let indexPath = self.tableView.indexPathForRow(at: buttonPosition)
+        
+        if indexPath != nil {
             let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "inventoryTrace") as UIViewController
             self.present(viewController, animated: false, completion: nil)
+        }
     }
     
     override func viewDidLoad() {
