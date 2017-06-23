@@ -172,10 +172,10 @@
             </objects>
             <point key="canvasLocation" x="-711" y="-410"/>
         </scene>
-        <!--inventoryTrace-->
+        <!--inventoryTracking-->
         <scene sceneID="egc-c4-7vM">
             <objects>
-                <viewController storyboardIdentifier="inventoryTrack" title="inventoryTrace" useStoryboardIdentifierAsRestorationIdentifier="YES" id="UcC-L4-RXE" customClass="InventoryTrackingViewController" customModule="Smarthin" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="inventoryTrack" title="inventoryTracking" useStoryboardIdentifierAsRestorationIdentifier="YES" id="UcC-L4-RXE" customClass="InventoryTrackingViewController" customModule="Smarthin" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="GOR-eK-kbw"/>
                         <viewControllerLayoutGuide type="bottom" id="fFA-8Z-Srn"/>
@@ -189,7 +189,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="trackingCell" id="dWu-RI-Y2A">
+                                    <tableViewCell clipsSubviews="YES" tag="1" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="trackingCell" id="dWu-RI-Y2A">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dWu-RI-Y2A" id="Ukw-Nx-pfH">
@@ -207,7 +207,7 @@
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="56c-W4-ULY">
                                                     <rect key="frame" x="302" y="0.0" width="46" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <state key="normal" title="Track"/>
+                                                    <state key="normal" title="Trace"/>
                                                     <connections>
                                                         <action selector="traceInventory:" destination="UcC-L4-RXE" eventType="touchUpInside" id="YWI-dw-rae"/>
                                                     </connections>
@@ -297,10 +297,10 @@ example@gmail.com
             </objects>
             <point key="canvasLocation" x="-66" y="940"/>
         </scene>
-        <!--inventoryTracking-->
+        <!--traceInventory-->
         <scene sceneID="wtl-8x-4kS">
             <objects>
-                <viewController storyboardIdentifier="inventoryTrace" title="inventoryTracking" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Qh6-NW-63R" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="inventoryTrace" title="traceInventory" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Qh6-NW-63R" customClass="TraceInventoryViewController" customModule="Smarthin" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="TBL-g5-bIV"/>
                         <viewControllerLayoutGuide type="bottom" id="ENb-k9-slw"/>
@@ -321,10 +321,10 @@ example@gmail.com
             </objects>
             <point key="canvasLocation" x="-713" y="1620"/>
         </scene>
-        <!--Inventory Scan View Controller-->
+        <!--scanInventory-->
         <scene sceneID="fP5-m1-pJG">
             <objects>
-                <viewController storyboardIdentifier="inventoryScan" useStoryboardIdentifierAsRestorationIdentifier="YES" id="xnH-H6-QLh" customClass="InventoryScanViewController" customModule="Smarthin" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="inventoryScan" title="scanInventory" useStoryboardIdentifierAsRestorationIdentifier="YES" id="xnH-H6-QLh" customClass="ScanInventoryViewController" customModule="Smarthin" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cjy-lP-Vqu"/>
                         <viewControllerLayoutGuide type="bottom" id="uOh-2v-oFb"/>
