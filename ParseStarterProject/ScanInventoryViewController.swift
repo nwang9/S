@@ -11,8 +11,7 @@ import UIKit
 class ScanInventoryViewController: BaseViewController {
 
     
-    var clientID : AnyObject?
-
+    var clientID = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()

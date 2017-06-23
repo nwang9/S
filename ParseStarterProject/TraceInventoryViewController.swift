@@ -8,8 +8,11 @@
 
 import UIKit
 
-class TraceInventoryViewController: UIViewController {
+class TraceInventoryViewController: BaseViewController {
 
+    
+    var clientID = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

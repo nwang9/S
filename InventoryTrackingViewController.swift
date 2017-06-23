@@ -16,14 +16,20 @@ class InventoryTrackingViewController: BaseViewController, UITableViewDelegate, 
     
     //Define rows etc.
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        //Query for objects for that company
+       let positionsTable = [[String : AnyObject]]()
         
-        return 5
+        return positionsTable.count
         
     }
     
     // Create cell
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "trackingCell")
+        cell.tag = indexPath.row
+        
+        //Replace line below with inventory item name
+        cell.textLabel?.text = "a"
         
         return cell
     }
@@ -31,24 +37,24 @@ class InventoryTrackingViewController: BaseViewController, UITableViewDelegate, 
 
     // Send to scan page
     @IBAction func scanInventory(sender: UIButton) {
-        var buttonPosition = sender.convert(CGPoint.zero, to: self.tableView)
-        let indexPath = self.tableView.indexPathForRow(at: buttonPosition)
+        let indexPath = sender.tag
+ 
         //-----TO DO------- Change indexPath!=nil to if let
-        if indexPath != nil {
+        if indexPath >= 0 {
             
-        let invScanViewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "inventoryScan") as! ScanInventoryViewController
-            
+        let invScanViewController:ScanInventoryViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "inventoryScan") as! ScanInventoryViewController
+            invScanViewController.clientID = indexPath
             self.present(invScanViewController, animated: false, completion: nil)
         }
     }
     // Send to trace page
-    @IBAction func traceInventory(_ sender: Any) {
-        let buttonPosition = (sender as AnyObject).convert(CGPoint.zero, to: self.tableView)
-        let indexPath = self.tableView.indexPathForRow(at: buttonPosition)
+    @IBAction func traceInventory(sender: UIButton) {
+        let indexPath = sender.tag
         
-        if indexPath != nil {
-            let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "inventoryTrace") as UIViewController
-            self.present(viewController, animated: false, completion: nil)
+        if indexPath >= 0 {
+            let invTraceViewController:TraceInventoryViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "inventoryTrace") as! TraceInventoryViewController
+            invTraceViewController.clientID = indexPath
+            self.present(invTraceViewController, animated: false, completion: nil)
         }
     }
     
