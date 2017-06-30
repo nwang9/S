@@ -43,7 +43,7 @@
 		035597DA1EF3510900E74B07 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		035597DC1EF3523500E74B07 /* InventorySetupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InventorySetupViewController.swift; sourceTree = "<group>"; };
 		035597E01EF3525100E74B07 /* AccountManagementViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountManagementViewController.swift; sourceTree = "<group>"; };
-		035597E41EF9A3E700E74B07 /* Second.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Second.storyboard; sourceTree = "<group>"; };
+		035597E41EF9A3E700E74B07 /* Second.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Second.storyboard; path = ParseStarterProject/Second.storyboard; sourceTree = "<group>"; };
 		035597F01EF9D1B600E74B07 /* ContactUsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContactUsViewController.swift; path = ../ContactUsViewController.swift; sourceTree = "<group>"; };
 		035597F41EFC356E00E74B07 /* InventoryTrackingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InventoryTrackingViewController.swift; path = ../InventoryTrackingViewController.swift; sourceTree = "<group>"; };
 		035597F61EFC853600E74B07 /* ScanInventoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanInventoryViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +81,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		037BBD9E1F06E70C00DB317F /* Pictures */ = {
+			isa = PBXGroup;
+			children = (
+				035597D81EF32E3A00E74B07 /* contactUs.png */,
+				035597D41EF32CF300E74B07 /* inventorySetup.png */,
+				035597D21EF32CAB00E74B07 /* inventoryTracking.jpg */,
+				035597D61EF32D6100E74B07 /* accountManagement.png */,
+				035597D01EF1FA4C00E74B07 /* Home.png */,
+			);
+			name = Pictures;
+			sourceTree = "<group>";
+		};
+		037BBD9F1F06E72500DB317F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		037BBDA01F06E72E00DB317F /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				814C3AC61B69877600E307BB /* Main.storyboard */,
+				035597E41EF9A3E700E74B07 /* Second.storyboard */,
+			);
+			name = Interfaces;
+			sourceTree = "<group>";
+		};
 		814C3AC51B69877600E307BB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -93,12 +121,10 @@
 		81BA813C1A49DA1800E65899 = {
 			isa = PBXGroup;
 			children = (
-				035597D81EF32E3A00E74B07 /* contactUs.png */,
-				035597D41EF32CF300E74B07 /* inventorySetup.png */,
-				035597D21EF32CAB00E74B07 /* inventoryTracking.jpg */,
-				035597D61EF32D6100E74B07 /* accountManagement.png */,
-				035597D01EF1FA4C00E74B07 /* Home.png */,
-				81BA81471A49DA1800E65899 /* Smarthin */,
+				037BBDA01F06E72E00DB317F /* Interfaces */,
+				037BBD9F1F06E72500DB317F /* Classes */,
+				037BBD9E1F06E70C00DB317F /* Pictures */,
+				81BA81471A49DA1800E65899 /* ViewControllers */,
 				814C3AC51B69877600E307BB /* Resources */,
 				81BA816A1A49DB5600E65899 /* Frameworks */,
 				81BA81461A49DA1800E65899 /* Products */,
@@ -113,13 +139,11 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		81BA81471A49DA1800E65899 /* Smarthin */ = {
+		81BA81471A49DA1800E65899 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				81BA814A1A49DA1800E65899 /* AppDelegate.swift */,
 				035597DA1EF3510900E74B07 /* BaseViewController.swift */,
-				814C3AC61B69877600E307BB /* Main.storyboard */,
-				035597E41EF9A3E700E74B07 /* Second.storyboard */,
 				035597F41EFC356E00E74B07 /* InventoryTrackingViewController.swift */,
 				035597F61EFC853600E74B07 /* ScanInventoryViewController.swift */,
 				035597F81EFC85A300E74B07 /* TraceInventoryViewController.swift */,
@@ -129,7 +153,7 @@
 				035597DC1EF3523500E74B07 /* InventorySetupViewController.swift */,
 				035597E01EF3525100E74B07 /* AccountManagementViewController.swift */,
 			);
-			name = Smarthin;
+			name = ViewControllers;
 			path = ParseStarterProject;
 			sourceTree = "<group>";
 		};
@@ -255,7 +279,7 @@
 				814C3AC71B69877600E307BB /* Base */,
 			);
 			name = Main.storyboard;
-			path = ../Resources;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
