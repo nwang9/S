@@ -27,10 +27,10 @@
             </objects>
             <point key="canvasLocation" x="-625" y="100"/>
         </scene>
-        <!--View Controller-->
+        <!--Data-->
         <scene sceneID="Boc-RS-dJk">
             <objects>
-                <viewController id="TvE-y8-op3" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="dataChart" title="Data" useStoryboardIdentifierAsRestorationIdentifier="YES" id="TvE-y8-op3" customClass="DataViewController" customModule="Smarthin" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tsK-fY-3wM"/>
                         <viewControllerLayoutGuide type="bottom" id="Fgu-PD-0vb"/>
@@ -40,6 +40,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dev-SC-Gqv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
