@@ -11,6 +11,9 @@ import Parse
 
 class HomepageViewController: BaseViewController {
     
+
+    @IBOutlet weak var dataCharts: UIButton!
+    
     // Sends user to contact us page
     @IBAction func contactUsPage(_ sender: Any) {
         let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "contactUs") as UIViewController
@@ -35,8 +38,12 @@ class HomepageViewController: BaseViewController {
         self.present(viewController, animated: false, completion: nil)
     }
     
-    //Sends user to inventory scan page
+    //Sends user to data page
 
+    @IBAction func dataPage(_ sender: Any) {
+            let viewController:UIViewController = UIStoryboard(name: "Second", bundle: nil).instantiateViewController(withIdentifier: "dataChart") as UIViewController
+            self.present(viewController, animated: false, completion: nil)
+    }
     
     
     override func viewDidLoad() {
