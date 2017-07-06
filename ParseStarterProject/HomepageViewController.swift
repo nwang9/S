@@ -41,7 +41,7 @@ class HomepageViewController: BaseViewController {
     //Sends user to data page
 
     @IBAction func dataPage(_ sender: Any) {
-            let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "dataChart") as UIViewController
+            let viewController:UIViewController = UIStoryboard(name: "Second", bundle: nil).instantiateViewController(withIdentifier: "dataChart") as UIViewController
             self.present(viewController, animated: false, completion: nil)
     }
     
