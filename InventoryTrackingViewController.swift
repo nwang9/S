@@ -32,9 +32,9 @@ class InventoryTrackingViewController: BaseViewController, UITableViewDelegate, 
         cell.tag = indexPath.row
         
         //Replace line below with inventory item name
-        cell.textLabel?.text = String(self.sweaters.count) + String(self.sweaters[0].size) + String(self.sweaters[0].Color) + "Shirt"
+       // cell.textLabel?.text = "1" + String(self.sweaters[0]["Size"]) + String(self.sweaters[0]["Color"]) + "Shirt"
         
-        
+        cell.textLabel?.text = "Testing"
         return cell
     }
     
@@ -58,7 +58,7 @@ class InventoryTrackingViewController: BaseViewController, UITableViewDelegate, 
                 } else {
                     if let shirt = object {
                         self.shirts.append(shirt)
-                        print(shirt.Color)
+                        print(shirt["Color"])
                     }
                 }
             }
