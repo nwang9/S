@@ -16,7 +16,7 @@ class HomepageViewController: BaseViewController {
     
     // Sends user to contact us page
     @IBAction func contactUsPage(_ sender: Any) {
-        let viewControll  er:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "contactUs") as UIViewController
+        let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "contactUs") as UIViewController
         self.present(viewController, animated: false, completion: nil)
     }
     

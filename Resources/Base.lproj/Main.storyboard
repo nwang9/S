@@ -99,7 +99,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S09-h5-Xs1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-66.400000000000006" y="-411.544227886057"/>
+            <point key="canvasLocation" x="4" y="-462"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -178,7 +178,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-711" y="-410"/>
+            <point key="canvasLocation" x="-711" y="-582"/>
         </scene>
         <!--inventoryTracking-->
         <scene sceneID="egc-c4-7vM">
@@ -234,7 +234,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ok6-bx-p47" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-714.39999999999998" y="274.81259370314842"/>
+            <point key="canvasLocation" x="-823" y="131"/>
         </scene>
         <!--Contact Us View Controller-->
         <scene sceneID="5Jv-0e-Krc">
@@ -295,7 +295,7 @@ example@gmail.com
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NNf-Ly-Eft" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-66" y="940"/>
+            <point key="canvasLocation" x="-238" y="839"/>
         </scene>
         <!--scanInventory-->
         <scene sceneID="fP5-m1-pJG">
@@ -314,7 +314,7 @@ example@gmail.com
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="05t-ip-3yN">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell2" id="05t-ip-3yN">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="05t-ip-3yN" id="Kxq-IF-chu">
@@ -377,7 +377,7 @@ example@gmail.com
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H2b-jy-God" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-66.400000000000006" y="274.81259370314842"/>
+            <point key="canvasLocation" x="-129" y="202"/>
         </scene>
         <!--accountManagement-->
         <scene sceneID="gaL-ab-TY7">
@@ -419,7 +419,7 @@ example@gmail.com
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bXt-Pg-Asi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-711.20000000000005" y="940.47976011994012"/>
+            <point key="canvasLocation" x="-844" y="839"/>
         </scene>
     </scenes>
     <resources>
