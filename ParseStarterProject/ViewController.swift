@@ -86,7 +86,7 @@ class ViewController: UIViewController {
                     
                     if error != nil {
                         var displayErrorMessage = "Please try again later"
-                        if let errorMessage = error as? NSError {
+                        if let errorMessage = error as NSError? {
                             displayErrorMessage = String(errorMessage.localizedDescription)
                         }
                         self.createAlert(title: "Form Error", message: displayErrorMessage)

@@ -24,6 +24,7 @@
 		037BBDAD1F06E86200DB317F /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 037BBDA81F06E81500DB317F /* Charts.framework */; };
 		037BBDAE1F06E86200DB317F /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 037BBDA81F06E81500DB317F /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		037BBDB31F06E9E400DB317F /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037BBDB21F06E9E400DB317F /* DataViewController.swift */; };
+		03AC7ABE1F0FEE640054A0F7 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 03AC7ABD1F0FEE640054A0F7 /* logo.png */; };
 		814C3ACA1B69877600E307BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 814C3AC61B69877600E307BB /* Main.storyboard */; };
 		814C3ACB1B69877600E307BB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 814C3AC81B69877600E307BB /* Images.xcassets */; };
 		81BA814B1A49DA1800E65899 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BA814A1A49DA1800E65899 /* AppDelegate.swift */; };
@@ -98,6 +99,7 @@
 		035597F81EFC85A300E74B07 /* TraceInventoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TraceInventoryViewController.swift; sourceTree = "<group>"; };
 		037BBDA11F06E81500DB317F /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../../../Downloads/Charts-3.0.0/Charts.xcodeproj"; sourceTree = "<group>"; };
 		037BBDB21F06E9E400DB317F /* DataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataViewController.swift; path = ../DataViewController.swift; sourceTree = "<group>"; };
+		03AC7ABD1F0FEE640054A0F7 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		814C3AC71B69877600E307BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		814C3AC81B69877600E307BB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		814C3AC91B69877600E307BB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 			children = (
 				035597D81EF32E3A00E74B07 /* contactUs.png */,
 				035597D41EF32CF300E74B07 /* inventorySetup.png */,
+				03AC7ABD1F0FEE640054A0F7 /* logo.png */,
 				035597D21EF32CAB00E74B07 /* inventoryTracking.jpg */,
 				035597D61EF32D6100E74B07 /* accountManagement.png */,
 				035597D01EF1FA4C00E74B07 /* Home.png */,
@@ -184,8 +187,8 @@
 		81BA813C1A49DA1800E65899 = {
 			isa = PBXGroup;
 			children = (
-				037BBDA01F06E72E00DB317F /* Interfaces */,
 				037BBDA11F06E81500DB317F /* Charts.xcodeproj */,
+				037BBDA01F06E72E00DB317F /* Interfaces */,
 				037BBD9F1F06E72500DB317F /* Classes */,
 				037BBD9E1F06E70C00DB317F /* Pictures */,
 				81BA81471A49DA1800E65899 /* ViewControllers */,
@@ -336,6 +339,7 @@
 			files = (
 				035597D71EF32D6100E74B07 /* accountManagement.png in Resources */,
 				035597D11EF1FA4C00E74B07 /* Home.png in Resources */,
+				03AC7ABE1F0FEE640054A0F7 /* logo.png in Resources */,
 				035597D31EF32CAB00E74B07 /* inventoryTracking.jpg in Resources */,
 				035597D91EF32E3A00E74B07 /* contactUs.png in Resources */,
 				035597E51EF9A3E700E74B07 /* Second.storyboard in Resources */,
@@ -488,7 +492,7 @@
 				INFOPLIST_FILE = Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.parse.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = Smarthin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -506,7 +510,7 @@
 				INFOPLIST_FILE = Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.parse.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = Smarthin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
 			};
