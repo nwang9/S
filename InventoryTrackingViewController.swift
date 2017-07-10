@@ -39,6 +39,7 @@ class InventoryTrackingViewController: BaseViewController, UITableViewDelegate, 
         super.viewDidLoad()
         self.tableView.delegate = self
         self.tableView.dataSource = self
+        manager.getDataFromServer()
         self.items = manager.getItems()
 
     }
