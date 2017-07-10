@@ -12,10 +12,11 @@ import Parse
 class InventoryTrackingViewController: BaseViewController, UITableViewDelegate, UITableViewDataSource{
     
     @IBOutlet weak var tableView: UITableView!
-    let manager = ItemDataSource()
+   
 
     var items: [Item] = []
-
+    let manager = ItemDataSource()
+    
     //Define rows etc.
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
@@ -47,29 +48,4 @@ class InventoryTrackingViewController: BaseViewController, UITableViewDelegate, 
         // Dispose of any resources that can be recreated.
     }
     
-    
-    /*
-     // Send to scan page
-     @IBAction func scanInventory(sender: UIButton) {
-     let indexPath = sender.tag
-     
-     //-----TO DO------- Change indexPath!=nil to if let
-     if indexPath >= 0 {
-     
-     let invScanViewController:ScanInventoryViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "inventoryScan") as! ScanInventoryViewController
-     invScanViewController.clientID = indexPath
-     self.present(invScanViewController, animated: false, completion: nil)
-     }
-     }
-     // Send to trace page
-     @IBAction func traceInventory(sender: UIButton) {
-     let indexPath = sender.tag
-     
-     if indexPath >= 0 {
-     let invTraceViewController:TraceInventoryViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "inventoryTrace") as! TraceInventoryViewController
-     invTraceViewController.clientID = indexPath
-     self.present(invTraceViewController, animated: false, completion: nil)
-     }
-     }
-     */
 }

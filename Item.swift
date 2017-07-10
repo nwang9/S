@@ -9,15 +9,21 @@
 import Foundation
 import Parse
 
-class Item: PFObject {
+class Item: PFObject, PFSubclassing {
+
+    static func parseClassName() -> String {
+        return "Item"
+    }
+    
     var Size: String!
     var Color: String!
-    var objectType: String!
+ 
+    @NSManaged var objectType: String!
     
     init(Size: String, Color: String, objectType: String) {
         self.Size = Size
         self.Color = Color
-        self.objectType = objectType
+        _ = objectType
         super.init()
     }
 }

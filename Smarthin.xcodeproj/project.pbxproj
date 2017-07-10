@@ -215,8 +215,8 @@
 		81BA81471A49DA1800E65899 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				037BBDB21F06E9E400DB317F /* DataViewController.swift */,
 				035597F41EFC356E00E74B07 /* InventoryTrackingViewController.swift */,
+				037BBDB21F06E9E400DB317F /* DataViewController.swift */,
 				035597F61EFC853600E74B07 /* ScanInventoryViewController.swift */,
 				035597F81EFC85A300E74B07 /* TraceInventoryViewController.swift */,
 				035597F01EF9D1B600E74B07 /* ContactUsViewController.swift */,

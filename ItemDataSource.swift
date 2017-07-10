@@ -18,13 +18,7 @@ class ItemDataSource{
     
     init() {
         items = []
-        for sweater in sweaters {
-            items.append(Item(Size: sweater.Size, Color: sweater.Color, objectType: "Sweater"))
-        }
-        for shirt in shirts {
-            items.append(Item(Size: shirt.Size, Color: shirt.Color, objectType: "Shirt"))
-        }
-        
+        getDataFromServer()
     }
     
     func getItems() -> [Item] {
@@ -33,6 +27,7 @@ class ItemDataSource{
     
     func getDataFromServer() {
         // Retrieve shirts that were scanned
+        
         let shirtQuery = PFQuery(className: "Shirt")
         
         for id in idsToQuery {
@@ -41,23 +36,26 @@ class ItemDataSource{
                     print(error as Any)
                 } else {
                     if let shirt = object {
-                        self.shirts.append(shirt as! Item)
+                    let item = Item(Size: shirt["Size"] as! String, Color: shirt["Color"] as! String, objectType: "Shirt")
+                        self.items.append(item)
                     }
                 }
             }
         }
-
+ 
         
         // Retrieve sweaters that were scanned
-        let sweaterQuery = PFQuery(className: "Sweater")
+      //  let sweaterQuery = PFQuery(className: "Sweater")
         
         for id in idsToQuery {
+            let sweaterQuery = PFQuery(className: "Sweater")
             sweaterQuery.getObjectInBackground(withId: id) { (object, error) in
                 if error != nil {
                     print(error as Any)
                 } else {
                     if let sweater = object {
-                        self.sweaters.append(sweater as! Item)
+                        let item = Item(Size: sweater["Size"] as! String, Color: sweater["Color"] as! String, objectType: "Sweater")
+                        self.items.append(item)
                     }
                 }
             }
