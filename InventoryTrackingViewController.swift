@@ -16,7 +16,7 @@ class InventoryTrackingViewController: BaseViewController, UITableViewDelegate, 
 
     var groupItems: [Item] = []
     let manager = ItemDataSource()
-    let foundIds: [String] = ["ot9rpYmb9P"]
+    let foundIds: [String] = ["ot9rpYmb9P", "Orn6jVn1PR", "sLEBMmFuv8"]
     
     //Define rows etc.
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

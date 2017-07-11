@@ -11,7 +11,7 @@ import Parse
 
 class ItemDataSource{
     // All found objects in scan
-    let idsToQueryForGroup: [String] = ["TehPVqdlTP", "ot9rpYmb9P"]
+    let idsToQueryForGroup: [String] = ["TehPVqdlTP", "ot9rpYmb9P", "Orn6jVn1PR", "sLEBMmFuv8"]
     var groupItems: [Item] = []
     
     init() {
