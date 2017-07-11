@@ -17,13 +17,14 @@ class Item: PFObject, PFSubclassing {
     
     var Size: String!
     var Color: String!
- 
-   var objectType: String!
+    var Id: String!
+    var objectType: String!
     
-    init(Size: String, Color: String, objectType: String) {
+    init(Size: String, Color: String, objectType: String, Id: String) {
         self.Size = Size
         self.Color = Color
         self.objectType = objectType
+        self.Id = Id
         super.init()
     }
 }

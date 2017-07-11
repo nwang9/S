@@ -10,22 +10,23 @@ import Foundation
 import Parse
 
 class ItemDataSource{
-    let idsToQuery: [String] = ["TehPVqdlTP", "ot9rpYmb9P"]
-    var items: [Item] = []
+    // All found objects in scan
+    let idsToQueryForGroup: [String] = ["TehPVqdlTP", "ot9rpYmb9P"]
+    var groupItems: [Item] = []
     
     init() {
         
     }
 
     func getItems() -> [Item] {
-        return items
+        return groupItems
     }
 
     
     func getDataFromServer(complete: @escaping ()->()) {
         // Retrieve shirts that were scanned
         
-        for id in idsToQuery {
+        for id in idsToQueryForGroup {
             let shirtQuery = PFQuery(className: "Shirt")
             
             shirtQuery.getObjectInBackground(withId: id)
@@ -35,9 +36,9 @@ class ItemDataSource{
                     print(error as Any)
                 } else {
                     if let shirt = object {
-                    let item = Item(Size: shirt["Size"] as! String, Color: shirt["Color"] as! String, objectType: "Shirt")
-                        self.items.append(item)
-                        print(self.items)
+                    let item = Item(Size: shirt["Size"] as! String, Color: shirt["Color"] as! String, objectType: "Shirt",Id: shirt.objectId as! String)
+                        self.groupItems.append(item)
+             
                     } else {
                         print("Nothing found")
                     }
@@ -49,7 +50,7 @@ class ItemDataSource{
         // Retrieve sweaters that were scanned
       //  let sweaterQuery = PFQuery(className: "Sweater")
         
-        for id in idsToQuery {
+        for id in idsToQueryForGroup {
             let sweaterQuery = PFQuery(className: "Sweater")
             
             sweaterQuery.getObjectInBackground(withId: id) { (object, error) in
@@ -57,8 +58,8 @@ class ItemDataSource{
                     print(error as Any)
                 } else {
                     if let sweater = object {
-                        let item = Item(Size: sweater["Size"] as! String, Color: sweater["Color"] as! String, objectType: "Sweater")
-                        self.items.append(item)
+                        let item = Item(Size: sweater["Size"] as! String, Color: sweater["Color"] as! String, objectType: "Sweater", Id: sweater.objectId as! String)
+                        self.groupItems.append(item)
                     }
                 }
                 complete()
