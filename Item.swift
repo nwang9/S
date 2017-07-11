@@ -18,12 +18,12 @@ class Item: PFObject, PFSubclassing {
     var Size: String!
     var Color: String!
  
-    @NSManaged var objectType: String!
+   var objectType: String!
     
     init(Size: String, Color: String, objectType: String) {
         self.Size = Size
         self.Color = Color
-        _ = objectType
+        self.objectType = objectType
         super.init()
     }
 }

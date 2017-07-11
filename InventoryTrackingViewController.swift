@@ -30,7 +30,7 @@ class InventoryTrackingViewController: BaseViewController, UITableViewDelegate, 
         let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "trackingCell")
         //cell.tag = indexPath.row
         let item = self.items[indexPath.row]
-        cell.textLabel?.text = "1" + item.Size + item.Color + item.objectType
+        cell.textLabel?.text = "1 " + item.Size + " " + item.Color + " " + item.objectType
         return cell
     }
     

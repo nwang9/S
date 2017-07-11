@@ -103,7 +103,7 @@
 		037BBDB21F06E9E400DB317F /* DataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataViewController.swift; path = ../DataViewController.swift; sourceTree = "<group>"; };
 		03AC7ABD1F0FEE640054A0F7 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		03F6BCAE1F13FD0600C6226C /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
-		03F6BCB01F1401F200C6226C /* ItemDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemDataSource.swift; path = ../ItemDataSource.swift; sourceTree = "<group>"; };
+		03F6BCB01F1401F200C6226C /* ItemDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDataSource.swift; sourceTree = "<group>"; };
 		814C3AC71B69877600E307BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		814C3AC81B69877600E307BB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		814C3AC91B69877600E307BB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -154,6 +154,7 @@
 		037BBD9F1F06E72500DB317F /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				03F6BCB01F1401F200C6226C /* ItemDataSource.swift */,
 				035597DA1EF3510900E74B07 /* BaseViewController.swift */,
 				03F6BCAE1F13FD0600C6226C /* Item.swift */,
 				81BA814A1A49DA1800E65899 /* AppDelegate.swift */,
@@ -215,7 +216,6 @@
 			isa = PBXGroup;
 			children = (
 				035597F41EFC356E00E74B07 /* InventoryTrackingViewController.swift */,
-				03F6BCB01F1401F200C6226C /* ItemDataSource.swift */,
 				037BBDB21F06E9E400DB317F /* DataViewController.swift */,
 				035597F61EFC853600E74B07 /* ScanInventoryViewController.swift */,
 				035597F81EFC85A300E74B07 /* TraceInventoryViewController.swift */,

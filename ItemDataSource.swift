@@ -22,7 +22,7 @@ class ItemDataSource{
     }
 
     
-    func getDataFromServer(complete: ()->()) {
+    func getDataFromServer(complete: @escaping ()->()) {
         // Retrieve shirts that were scanned
         
         for id in idsToQuery {
@@ -37,6 +37,7 @@ class ItemDataSource{
                     if let shirt = object {
                     let item = Item(Size: shirt["Size"] as! String, Color: shirt["Color"] as! String, objectType: "Shirt")
                         self.items.append(item)
+                        print(self.items)
                     } else {
                         print("Nothing found")
                     }
@@ -60,9 +61,11 @@ class ItemDataSource{
                         self.items.append(item)
                     }
                 }
+                complete()
             }
+            
         }
-     complete()
+     
     }
     
 
