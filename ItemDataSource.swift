@@ -10,57 +10,65 @@ import Foundation
 import Parse
 
 class ItemDataSource{
-    let idsToQuery: [String] = ["TehPVqdlTP", "ot9rpYmb9P"]
-    var items: [Item]
-    var sweaters: [Item] = []
-    var shirts: [Item] = []
-
+    // All found objects in scan
+    let idsToQueryForGroup: [String] = ["TehPVqdlTP", "ot9rpYmb9P"]
+    var groupItems: [Item] = []
     
     init() {
-        items = []
-        for sweater in sweaters {
-            items.append(Item(Size: sweater.Size, Color: sweater.Color, objectType: "Sweater"))
-        }
-        for shirt in shirts {
-            items.append(Item(Size: shirt.Size, Color: shirt.Color, objectType: "Shirt"))
-        }
         
     }
-    
+
     func getItems() -> [Item] {
-        return items
+        return groupItems
     }
+
     
-    func getDataFromServer() {
+    func getDataFromServer(complete: @escaping ()->()) {
         // Retrieve shirts that were scanned
-        let shirtQuery = PFQuery(className: "Shirt")
         
-        for id in idsToQuery {
-            shirtQuery.getObjectInBackground(withId: id) { (object, error) in
+        for id in idsToQueryForGroup {
+            let shirtQuery = PFQuery(className: "Shirt")
+            
+            shirtQuery.getObjectInBackground(withId: id)
+            {
+                (object, error) in
                 if error != nil {
                     print(error as Any)
                 } else {
                     if let shirt = object {
-                        self.shirts.append(shirt as! Item)
+                    let item = Item(Size: shirt["Size"] as! String, Color: shirt["Color"] as! String, objectType: "Shirt",Id: shirt.objectId as! String)
+                        self.groupItems.append(item)
+             
+                    } else {
+                        print("Nothing found")
                     }
                 }
             }
         }
-
+ 
         
         // Retrieve sweaters that were scanned
-        let sweaterQuery = PFQuery(className: "Sweater")
+      //  let sweaterQuery = PFQuery(className: "Sweater")
         
-        for id in idsToQuery {
+        for id in idsToQueryForGroup {
+            let sweaterQuery = PFQuery(className: "Sweater")
+            
             sweaterQuery.getObjectInBackground(withId: id) { (object, error) in
                 if error != nil {
                     print(error as Any)
                 } else {
                     if let sweater = object {
-                        self.sweaters.append(sweater as! Item)
+                        let item = Item(Size: sweater["Size"] as! String, Color: sweater["Color"] as! String, objectType: "Sweater", Id: sweater.objectId as! String)
+                        self.groupItems.append(item)
                     }
                 }
+                complete()
             }
+            
         }
+     
     }
+    
+
+
 }
