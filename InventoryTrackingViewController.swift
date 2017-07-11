@@ -39,11 +39,18 @@ class InventoryTrackingViewController: BaseViewController, UITableViewDelegate, 
         super.viewDidLoad()
         self.tableView.delegate = self
         self.tableView.dataSource = self
-        manager.getDataFromServer()
-        self.items = manager.getItems()
-
+        manager.getDataFromServer(complete: { () -> () in
+            self.reloadData()
+        })
     }
     
+    
+    // Reload Table after data retrieval
+    func reloadData () {
+        self.items = manager.getItems()
+        self.tableView.reloadData()
+    }
+
      override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

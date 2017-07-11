@@ -22,7 +22,7 @@ class ItemDataSource{
     }
 
     
-    func getDataFromServer() {
+    func getDataFromServer(complete: ()->()) {
         // Retrieve shirts that were scanned
         
         for id in idsToQuery {
@@ -62,5 +62,9 @@ class ItemDataSource{
                 }
             }
         }
+     complete()
     }
+    
+
+
 }
