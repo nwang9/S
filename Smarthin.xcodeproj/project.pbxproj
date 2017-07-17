@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		034F4ABA1F1D6FCF00D4B238 /* GroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034F4AB91F1D6FCF00D4B238 /* GroupViewController.swift */; };
 		035597CF1EF1B8C900E74B07 /* HomepageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035597CE1EF1B8C900E74B07 /* HomepageViewController.swift */; };
 		035597D11EF1FA4C00E74B07 /* Home.png in Resources */ = {isa = PBXBuildFile; fileRef = 035597D01EF1FA4C00E74B07 /* Home.png */; };
 		035597D31EF32CAB00E74B07 /* inventoryTracking.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 035597D21EF32CAB00E74B07 /* inventoryTracking.jpg */; };
@@ -85,6 +86,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		034F4AB91F1D6FCF00D4B238 /* GroupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GroupViewController.swift; path = ../GroupViewController.swift; sourceTree = "<group>"; };
 		035597CE1EF1B8C900E74B07 /* HomepageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomepageViewController.swift; sourceTree = "<group>"; };
 		035597D01EF1FA4C00E74B07 /* Home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Home.png; path = ParseStarterProject/Home.png; sourceTree = "<group>"; };
 		035597D21EF32CAB00E74B07 /* inventoryTracking.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = inventoryTracking.jpg; path = ParseStarterProject/inventoryTracking.jpg; sourceTree = "<group>"; };
@@ -103,7 +105,7 @@
 		037BBDB21F06E9E400DB317F /* DataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataViewController.swift; path = ../DataViewController.swift; sourceTree = "<group>"; };
 		03AC7ABD1F0FEE640054A0F7 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		03F6BCAE1F13FD0600C6226C /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
-		03F6BCB01F1401F200C6226C /* ItemDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemDataSource.swift; path = ../ItemDataSource.swift; sourceTree = "<group>"; };
+		03F6BCB01F1401F200C6226C /* ItemDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDataSource.swift; sourceTree = "<group>"; };
 		814C3AC71B69877600E307BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		814C3AC81B69877600E307BB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		814C3AC91B69877600E307BB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 		037BBD9F1F06E72500DB317F /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				03F6BCB01F1401F200C6226C /* ItemDataSource.swift */,
 				035597DA1EF3510900E74B07 /* BaseViewController.swift */,
 				03F6BCAE1F13FD0600C6226C /* Item.swift */,
 				81BA814A1A49DA1800E65899 /* AppDelegate.swift */,
@@ -215,7 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				035597F41EFC356E00E74B07 /* InventoryTrackingViewController.swift */,
-				03F6BCB01F1401F200C6226C /* ItemDataSource.swift */,
+				034F4AB91F1D6FCF00D4B238 /* GroupViewController.swift */,
 				037BBDB21F06E9E400DB317F /* DataViewController.swift */,
 				035597F61EFC853600E74B07 /* ScanInventoryViewController.swift */,
 				035597F81EFC85A300E74B07 /* TraceInventoryViewController.swift */,
@@ -368,6 +371,7 @@
 				81BA814D1A49DA1800E65899 /* ViewController.swift in Sources */,
 				035597DB1EF3510900E74B07 /* BaseViewController.swift in Sources */,
 				03F6BCAF1F13FD0600C6226C /* Item.swift in Sources */,
+				034F4ABA1F1D6FCF00D4B238 /* GroupViewController.swift in Sources */,
 				035597F71EFC853600E74B07 /* ScanInventoryViewController.swift in Sources */,
 				035597F11EF9D1B600E74B07 /* ContactUsViewController.swift in Sources */,
 				035597DD1EF3523500E74B07 /* InventorySetupViewController.swift in Sources */,
